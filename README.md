@@ -9,12 +9,14 @@ Create `__init__.py` under each of the package you want to import
 
 Step 3:
 In your `setup.py`, modify `packages` array to include all the packages you want to import
+You can also define your package name and versions etc. You can find details here: http://setuptools.readthedocs.io/en/latest/setuptools.html
 
 Step 4:
 Install package by running:
 `python setup.py install`
 
-It should install the pacakge and you can find it by:
+It will generate two folders named `build` and `YOUR_PACKAGE_NAME.egg-info` and install the pacakge.
+You can find your installed pacakges by:
 `pip freeze`
 
-Then you can import your packages anywhere in your system
+Now, you can import your packages anywhere in your system
